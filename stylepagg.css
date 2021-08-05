@@ -54,7 +54,7 @@ h2 {
    position: relative;
    width: 30px;
    height: 25px;
-   display: block;
+   display: none;
    margin-left: auto;
 }
 #hamburger span{

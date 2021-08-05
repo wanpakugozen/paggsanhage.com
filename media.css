@@ -3,6 +3,6 @@
         display: none;
     }
     #hamburger{
-        display block;
+        display: block;
     }
 }

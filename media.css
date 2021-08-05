@@ -2,4 +2,6 @@
     .pc-nav{
         display: none;
     }
-}
+    #hamburger{
+        display block;
+    }

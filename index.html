@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -5,12 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylepagg.css">
+    <link rel="stylesheet" href="media.css">
     <title>Yuta-Portfolio</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function(){
+            const hum = $('#hamburger, .close')
+            const nav = $('.sp-nav')
+            hum.on('click', function(){
+                nav.toggleClass('toggle');
+            });
+        })
+    </script>
 </head>
 <body>
     <header>
         <h1>
-            <a href="/">ぱぐさんはげ.com</a>
+            <a href="index.html">ぱぐさんはげ.com</a>
         </h1>
         <nav class="pc-nav">
             <ul class="ml-auto">
@@ -20,9 +33,21 @@
                 <li class="headerli"><a href="#">お問い合わせ</a></li>
             </ul>
         </nav>
+        <nav class="sp-nav">
+            <ul>
+                <li><a href="#">ぱぐさんはげとは？</a></li>
+                <li><a href="#">価格</a></li>
+                <li><a href="#">SNS</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li class="close"><span>閉じる</span></li>
+            </ul>
+        </nav>
+        <div id="hamburger">
+            <span></span>
+        </div>
     </header>
     <div class="main-visual">
-        <h2>君たちは全員はげ</h2>
+        <h2>Main Text</h2>
     </div>
     
 
